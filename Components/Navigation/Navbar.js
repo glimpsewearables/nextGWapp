@@ -90,7 +90,15 @@ export default function Navbar() {
           </Paper>
         </Grid>
         <Grid className={classes.Centerbox} item xs={6} sm={12}>
-          <Paper className={classes.paper}></Paper>
+          <Paper className={classes.paper}>
+            <a href="http://192.168.50.5:3030/home/pi/pikrellcam/media/videos">
+              <img
+                className={classes.Img}
+                src="/video.png"
+                alt="Video Logo"
+              />
+            </a>
+          </Paper>
         </Grid>
         <Grid className={classes.Centerbox} item xs={6} sm={12}>
           <Paper className={classes.paper}></Paper>
