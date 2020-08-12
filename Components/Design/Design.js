@@ -6,17 +6,18 @@ import Container from "@material-ui/core/Container";
 import Paper from "@material-ui/core/Paper";
 import WiFiDesktop from "../WiFiDesktop/WiFiDesktop";
 
-useEffect(() => {
-console.log('innnn');
-const func = async () => {
-const ipV4 = await publicIp.v4()
-console.log(ipV4);
-//=> '46.5.21.123'
+
+
+const useStyles = makeStyles((theme) => ({
+  useEffect(() => {
+    console.log('innnn');
+    const func = async () => {
+      const ipV4 = await publicIp.v4()
+      console.log(ipV4);
+      //=> '46.5.21.123'
 }
 func();
 }, [])
-
-const useStyles = makeStyles((theme) => ({
   grid: {
     padding: "34px 0",
     [theme.breakpoints.down("xs")]: {
